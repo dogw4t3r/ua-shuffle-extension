@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>UA Shuffle</title>
+        <style>
+            body {
+                font-family: sans-serif;
+                padding: 10px;
+                width: 300px;
+            }
+            textarea,
+            input {
+                width: 100%;
+                box-sizing: border-box;
+                margin-top: 5px;
+            }
+            button {
+                margin-top: 5px;
+                width: 100%;
+                padding: 5px;
+            }
+            h3 {
+                margin-top: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Current User-Agent:</h3>
+        <div id="ua" style="word-break: break-all; font-size: 0.85em"></div>
+        <button id="randomize">Shuffle Now</button>
+
+        <h3>Set Specific User-Agent:</h3>
+        <input type="text" id="customUA" placeholder="Paste a UA string here" />
+        <button id="setUA">Set UA</button>
+
+        <h3>Edit User-Agent List:</h3>
+        <textarea id="uaList" rows="6"></textarea>
+        <button id="saveList">Save UA List</button>
+        <p id="status" style="color: green"></p>
+
+        <script src="popup.js"></script>
+    </body>
+</html>
